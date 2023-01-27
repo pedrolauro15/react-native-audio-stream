@@ -1,35 +1,40 @@
 {
-  "name": "react-native-recording",
-  "version": "0.5.1",
-  "description": "React Native audio recording module used for DSP",
-  "author": "Qiu Xiang <i@7c00.cc>",
+  "name": "rn-live-audio",
+  "version": "0.0.1",
+  "description": "React Native live audio recording",
+  "author": "Pedro Pontes<s4s.tech> -> Forked by: Qiu Xiang <i@7c00.cc>",
   "license": "MIT",
   "keywords": [
     "react-native",
     "audio-recording",
-    "recording"
+    "recording",
+    "stream",
+    "buffer"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/qiuxiang/react-native-recording"
+    "url": "https://github.com/pedrolauro15/react-native-audio-stream"
   },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
-    "lib/index.js",
-    "lib/android/src",
-    "lib/android/build.gradle",
-    "lib/ios",
-    "react-native.config.js"
+    "lib/**/*"
   ],
-  "main": "lib",
   "scripts": {
     "start": "react-native start",
     "android": "react-native run-android",
-    "release-android": "react-native run-android --variant=release",
-    "ios": "react-native run-ios"
+    "ios": "react-native run-ios",
+    "build": "rm -rf lib && tsc && cp -R src/android lib && cp -R src/ios lib "
   },
   "devDependencies": {
+    "@types/jest": "^29.4.0",
+    "@types/react": "^18.0.27",
+    "@types/react-native": "^0.71.0",
+    "@types/react-test-renderer": "^18.0.0",
     "react": "16.11.0",
     "react-native": "0.62.2",
-    "react-native-webview": "^10.3.1"
+    "react-native-webview": "^10.3.1",
+    "ts-migrate": "^0.1.35",
+    "typescript": "^4.9.4"
   }
 }
