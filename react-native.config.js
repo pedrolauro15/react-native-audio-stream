@@ -12,7 +12,7 @@ module.exports = {
         ios: { sourceDir: __dirname + "/lib/ios" },
         android: {
           sourceDir: __dirname + "/lib/android",
-          packageImportPath: "import cn.qiuxiang.react.recording.RecordingPackage;",
+          packageImportPath: "import com.s4s.react.rnliveaudio.RecordingPackage;",
           packageInstance: "new RecordingPackage()"
         }
       }

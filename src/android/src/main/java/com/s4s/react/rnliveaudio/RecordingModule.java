@@ -1,4 +1,4 @@
-package cn.qiuxiang.react.recording;
+package com.s4s.react.rnliveaudio;
 import android.media.AudioFormat;
 import android.media.AudioRecord;
 import android.media.MediaRecorder;

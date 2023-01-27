@@ -1,4 +1,4 @@
-package cn.qiuxiang.react.recording;
+package com.s4s.react.rnliveaudio;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
