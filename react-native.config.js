@@ -6,7 +6,7 @@ module.exports = {
     }
   },
   dependencies: {
-    "react-native-recording": {
+    "rn-live-audio": {
       root: __dirname,
       platforms: {
         ios: { sourceDir: __dirname + "/lib/ios" },
